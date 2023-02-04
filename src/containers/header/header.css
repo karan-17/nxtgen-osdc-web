@@ -1,0 +1,163 @@
+.nextgen__header{
+    display: flex;
+    flex-direction: row;
+}
+
+.nextgen__header_content{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+.nextgen__header-content h1{
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.nextgen__header-content p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-text);
+    margin-top: 1.5rem;
+}
+
+.nextgen__header-content__input{
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+}
+
+.nextgen__header-content__input input{
+    flex:2;
+    width:100%;
+    min-height: 50px;
+    background: var(--color-footer);
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    outline: none;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-text);
+}
+
+.nextgen__header-content__input button{
+    background: #FF4820;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #fff;
+    font-weight: bold;
+    flex:0.6;
+    width: 100%;
+    min-height: 50px;
+    cursor: pointer;
+    outline: none;
+    padding: 0 1rem;
+    border: none;
+}
+
+.nextgen__header-content__people{
+    display: flex;
+    width: 100%; 
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.nextgen__header-content__people img{
+    width: 182px;
+    height: 38px;
+}
+
+.nextgen__header-content__people p{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    color: var(--color-text);
+    margin:0 0 0 1rem;
+    text-align:center;
+}
+
+.nextgen__header-image{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.nextgen__header-image img{
+    margin: 0 200px 0 200px;
+    width: 80%;
+    height: 80%;
+}
+
+@media screen and (max-width: 1050px){
+    .nextgen__header{ 
+        flex-direction: column;
+    }
+    .nextgen__header-content{
+        margin: 0 0 3rem;
+    }
+    .nextgen__header-content__people p{
+        font-size: 14px;
+        margin:1rem;
+    }
+}
+
+
+@media screen and (max-width: 650px){
+    .nextgen__header h1{ 
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .nextgen__header p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .nextgen__header-content__people{
+        flex-direction: column;
+    }
+    .nextgen__header-content__people p{
+        font-size: 14px;
+        margin:0;
+    }
+    .nextgen__header-content__input input, 
+    .nextgen__header-content__input button{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .nextgen__header h1{ 
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .nextgen__header p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .nextgen__header-content__input input, 
+    .nextgen__header-content__input button{
+        /* min-height: 40px; */
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
