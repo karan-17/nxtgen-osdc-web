@@ -5,17 +5,17 @@ import logo from '../../assets/logo.png'
 
 // Block Element Modifier (BEM) naming convention
 
-const Menu = () => {
-  <>
-    <p><a href="#home">Home</a></p>
-    <p><a href="#about">What is NXTGEN?</a></p>
-    <p><a href="#possibility">Open Source</a></p>
-    <p><a href="#features">Features</a></p>
-    <p><a href="#blogs">Blogs</a></p>
-    <p><a href="#members">Members</a></p>
-    <p><a href="#contact">Contact</a></p>
-    </>
-};
+// const Menu = () => {
+//   <>
+//     <p><a href="#home">Home</a></p>
+//     <p><a href="#about">What is NXTGEN?</a></p>
+//     <p><a href="#possibility">Open Source</a></p>
+//     <p><a href="#features">Features</a></p>
+//     <p><a href="#blogs">Blogs</a></p>
+//     <p><a href="#members">Members</a></p>
+//     <p><a href="#contact">Contact</a></p>
+//     </>
+// };
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
